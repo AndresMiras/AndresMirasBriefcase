@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "roboto-thin";
+    /* Es el nombre de la nueva letra que tendremos para usar en nuestro css */
+    src: url("./fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "roboto-regular";
+    /* Es el nombre de la nueva letra que tendremos para usar en nuestro css */
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    /* Es el nombre de la nueva letra que tendremos para usar en nuestro css */
+    src: url("./fonts/Roboto-Bold.ttf");
+}
+
+$fontGen1: 'roboto-thin';
+$fontGen2: 'roboto-regular';
+$fontGen3: 'roboto-bold';
+$colorFont1:rgba(255, 255, 255);
+$colorFont2:rgba(255, 255, 255, 0.75);
+$colorFont3:black;
+$colorFont4:rgba(33, 32, 32, 0.68);
+
+$colorBackgrunds0: rgb(13, 112, 157);
+$colorBackgrunds1: RGB(85,150,180,0.35);
+$colorBackgrunds2: rgba(85,150,180);
+$colorBackgrunds3: rgba(233, 243, 246, 0.9);
+$colorBorders1:rgb(255, 255, 255);
+
+$barColor:rgb(74, 168, 185);
+$barColor1: rgb(112, 212, 159);
+

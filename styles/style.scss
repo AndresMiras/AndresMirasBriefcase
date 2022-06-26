@@ -1,0 +1,364 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4vmax;
+  color: $colorFont1;
+  font-family: $fontGen2;
+  text-align: center;
+}
+
+.print {
+  position: fixed;
+  top:20px;
+  right:20px;
+  img {
+    width: 4vmax;
+    height: 4vmax;
+  }
+}
+
+.print:hover {
+  transition: .3s;
+  opacity: 0;
+}
+
+
+body {
+  @include boxrec(100vw, 100vh, $colorBackgrunds1);
+  @include flex-center(flex-start ,row);
+}
+
+header {
+  @include boxrec(38%, 100%, $colorBackgrunds1);
+  margin: 0;
+  img {
+    @include boxsq(8vmax, $colorBackgrunds1);
+    @include img_fijada;
+    @include border(50%, 3px, $colorBorders1);
+    padding: 0.2vmax;
+    margin: 3vh 0 2.5vh 0;
+  }
+
+  div {
+    @include boxrec(80%, 1.5vmax, $colorBackgrunds2);
+    @include flex-center(center);
+    margin-top: 2vh;
+    border-radius: 0 4vmax 2vmax 0;
+    h2 {
+      font-family: $fontGen3;
+      font-size: 75%;
+    }
+  }
+}
+
+.locations {
+  @include boxrec(100%, 15%);
+  @include flex(space-around, flex-start, column);
+  margin: 2vh 0 0 5%;
+  div {
+    @include flex-center(space-around, row);
+    @include boxrec(80%, 33.33%);
+    margin-top: 1.5%;
+    a {
+      @include boxsq(100%);
+      @include flex-center(flex-start, row);
+      text-decoration: none;
+      img {
+        @include border(50%, 1.5px, $colorFont2);
+        @include boxsq(1.65vmax);
+        padding: 0.3vmax;
+        // filter: invert(1) saturate(1000%);
+      }
+      p {
+        width: fit-content;
+        padding-top: 2.5%;
+        margin-left: 5%;
+        font-size: 72%;
+        text-align: start;
+      }
+    }
+    a:hover {
+      transition: 0.3s;
+      opacity: 0.5;
+    }
+  }
+}
+
+.skills_tittle {
+  margin-top: 5vh;
+}
+
+.skills {
+  @include boxrec(100%, 35%);
+  @include flex(flex-start, center, column);
+}
+
+.bar25 {
+  @include boxrec(100%, 1.1vmax);
+  @include border(0, 0);
+  @include flex(flex-start, center, row, wrap);
+  @include marginbar();
+  // border: 1px solid black;
+  div {
+    position: relative;
+    @include flex(flex-start, center, column);
+    @include boxrec(45%, 100%, $colorFont2);
+    @include border(24px,0);
+    margin: 0;
+    div {
+      @include boxrec(25%, 100%, $barColor);
+      // border: 1px solid black;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      animation-name: skillbar25;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  }
+  p {
+    margin: 0 0 0 4%;
+    font-size: 72%;
+    width: fit-content;
+    min-width: 70px;
+    text-align: start;
+  }
+}
+
+@keyframes skillbar25 {
+  0% {
+    width: 0%;
+  }
+  75% {
+    width: 30%;
+    background-color: $barColor1;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+.bar50 {
+  @include boxrec(100%, 1.1vmax);
+  @include border(0, 0);
+  @include flex(flex-start, center, row, wrap);
+  @include marginbar();
+  // border: 1px solid black;
+  div {
+    position: relative;
+    @include flex(flex-start, center, column);
+    @include boxrec(45%, 100%, $colorFont2);
+    @include border(24px,0);
+    margin: 0;
+    div {
+      @include boxrec(50%, 100%, $barColor);
+      // border: 1px solid black;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      animation-name: skillbar50;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  }
+  p {
+    margin: 0 0 0 4%;
+    font-size: 72%;
+    width: fit-content;
+    min-width: 70px;
+    text-align: start;
+  }
+}
+
+@keyframes skillbar50 {
+  0% {
+    width: 0%;
+  }
+  75% {
+    width: 60%;
+    background-color: $barColor1;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.bar75 {
+  @include boxrec(100%, 1.1vmax);
+  @include border(0, 0);
+  @include flex(flex-start, center, row, wrap);
+  @include marginbar();
+  // border: 1px solid black;
+  div {
+    position: relative;
+    @include flex(flex-start, center, column);
+    @include boxrec(45%, 100%, $colorFont2);
+    @include border(24px,0);
+    margin: 0;
+    div {
+      @include boxrec(75%, 100%, $barColor);
+      // border: 1px solid black;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      animation-name: skillbar75;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  }
+  p {
+    margin: 0 0 0 4%;
+    font-size: 72%;
+    width: fit-content;
+    min-width: 70px;
+    text-align: start;
+  }
+}
+
+@keyframes skillbar75 {
+    0% {
+        width: 0%;
+      }
+    50% {
+      background-color: $barColor1;
+        width: 85%;
+    }
+    75% {
+        width: 75%;
+    }
+}
+
+.bar100 {
+  @include boxrec(100%, 1.1vmax);
+  @include border(0, 0);
+  @include flex(flex-start, center, row, wrap);
+  @include marginbar();
+  // border: 1px solid black;
+  div {
+    position: relative;
+    @include flex(flex-start, center, column);
+    @include boxrec(45%, 100%, $colorFont2);
+    @include border(24px,0);
+    margin: 0;
+    div {
+      @include boxrec(100%, 100%, $barColor);
+      // border: 1px solid black;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      animation-name: skillbar100;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  }
+  p {
+    margin: 0 0 0 4%;
+    font-size: 72%;
+    width: fit-content;
+    min-width: 70px;
+    text-align: start;
+  }
+}
+
+@keyframes skillbar100 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    background-color: $barColor1;
+    width: 100%;
+  }
+}
+
+h3 {
+  @include tittleh1(1.5vmax, $colorBackgrunds2, $fontGen3);
+  width: fit-content;
+}
+
+h4 {
+  @include tittleh1(1.2vmax, $colorBackgrunds2, $fontGen3);
+  width: fit-content;
+}
+
+h5 {
+  @include tittleh1(1vmax, $colorFont3, $fontGen2);
+  width: fit-content;
+}
+
+h6 {
+  @include tittleh1(0.8vmax, $colorFont4, $fontGen2);
+  width: fit-content;
+}
+
+main {
+  display: block;
+  margin-left: 0.5%;
+  @include flex(flex-start,flex-start, column);
+  @include boxrec(55%,100%,$colorBackgrunds3);
+  padding: 0 2% 0 4%;
+  .author {
+    @include boxrec(100%,auto);
+    h1 {
+      @include tittleh1(2vmax, $colorBackgrunds0, $fontGen3);
+      width: fit-content;
+      margin-top: 1.5vh;
+    }
+
+    hr {
+      margin: 1.5vh 0;
+      border: 3px solid $colorBackgrunds0;
+      width: 20%;
+    }
+
+    h4 {
+      margin: 6vh 0 0 0;
+    }
+  }
+
+  p {
+    @include tittleh1(75%, $colorFont3, $fontGen2);
+    margin: 3% 0 0 0%;
+    text-align: left;
+    width: 90%;
+  }
+}
+
+.works {
+  margin-top: 4vmax;
+  h4 {
+    position: relative;
+  }
+  h5 {
+    margin-top: 1.5vh;
+  }
+  h6 {
+    margin-bottom: 1vh;
+  }
+  pre {
+    @include tittleh1(75%, $colorFont3, $fontGen1);
+    text-align: left;
+    width: 90%;
+    font-size: 70%;
+  }
+}
+
+
+
+@media (max-height: 297mm) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 200mm) and (max-height: 297mm){
+  html {
+    @include flex-center(center);
+    background-color: white;
+  }
+  body {
+    width: 65%;
+  }
+}

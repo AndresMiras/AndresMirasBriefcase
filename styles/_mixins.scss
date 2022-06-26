@@ -1,0 +1,50 @@
+@import "./variables";
+
+@mixin img_fijada {
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin border($rad:0, $wh:1.5px, $color:transparent, $sty: solid) {
+    border:$wh solid $color;
+    border-radius: $rad;
+    border-style: $sty;
+}
+
+@mixin flex-center($justf:center, $direct:column, $wr:nowrap) {
+    display: flex;
+    justify-content: $justf;
+    align-items: center;
+    flex-direction: $direct;
+    flex-wrap: $wr;
+}
+
+@mixin flex($justf:center, $alig:center, $direct:column, $wr:nowrap) {
+    display: flex;
+    justify-content: $justf;
+    align-items: $alig;
+    flex-direction: $direct;
+    flex-wrap: $wr;
+}
+
+@mixin boxsq($params: 350px, $colr:transparent) {
+    height: $params;
+    width: $params;
+    background: $colr;
+}
+
+@mixin boxrec($weh:650px, $hei:auto, $colr:transparent) {
+    width: $weh;
+    height: $hei;
+    background: $colr;
+}
+
+@mixin tittleh1($size:2vmax, $col:black, $ft:Arial) {
+    font-size: $size;
+    color: $col;
+    font-family: $ft;
+}
+
+@mixin marginbar($heig:2vh) {
+    margin: $heig 0 0 7%;
+}

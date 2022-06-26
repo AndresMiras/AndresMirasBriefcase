@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>BRIEFCASE</title>
+</head>
+
+<a class="print" href="javascript:window.print()">
+    <img src="./styles/visualice/print.svg" alt=""/>
+</a>
+
+<body id="container">
+    <header>
+        <img src="./styles/visualice/profile.png" alt="">
+        <div><h2>CONTACT ME AT</h2></div>
+        <section class="locations">
+            <div>
+                <a href="https://www.google.com/maps/place/43%C2%B017'31.5%22N+8%C2%B017'38.5%22W/@43.2921095,-8.2943598,134m/data=!3m1!1e3!4m8!1m2!2m1!1saldea+de+arriba+N%C2%BA5+cecebre!3m4!1s0x0:0xbad9aee11532309f!8m2!3d43.2920702!4d-8.2940142" target="_blank"/>
+                <img src="./styles/visualice/location.svg"
+                 alt="">
+                <p>Aldea Arriba, 14, 15650 Cambre, A Coruña</p>
+                
+                </a>
+            </div>
+            <div>
+                <a href="mailto:andres.miras@hotmail.com" target="_blank" rel="noopener noreferrer" subject="No%20Refer"/>
+                <img src="./styles/visualice/mail.svg" alt="">
+                <p>andres.miras@hotmail.com</p>      
+                </a>
+            </div>
+            <div>
+                <a href="tel:+34 619 264 928"/>
+                <img src="./styles/visualice/phone-alt.svg"
+                 alt="">
+                 <p>+34 619 264 928</p>
+                </a>
+            </div>
+        </section>
+        <div class="skills_tittle"><h2>SKILLS SUMMARY</h2></div>
+        <section class="skills">
+            <div class="bar75">
+                <div>
+                    <div></div>
+                </div>
+                <p>Web development</p>
+            </div>
+            <div class="bar100">
+                <div>
+                    <div></div>
+                </div>
+                <p>Teamwork</p>
+            </div>
+            <div class="bar75">
+                <div>
+                    <div></div>
+                </div>
+                <p>Java Script & C</p>
+            </div>
+            <div class="bar75">
+                <div>
+                    <div></div>
+                </div>
+                <p>VBA & Excel</p>
+            </div>
+            <div class="bar50">
+                <div>
+                    <div></div>
+                </div>
+                <p>SQL</p>
+            </div>
+            <div class="bar75">
+                <div>
+                    <div></div>
+                </div>
+                <p>Git</p>
+            </div>
+            <div class="bar25">
+                <div>
+                    <div></div>
+                </div>
+                <p>React</p>
+            </div>
+            <div class="bar25">
+                <div>
+                    <div></div>
+                </div>
+                <p>Node</p>
+            </div>
+            <div class="bar75">
+                <div>
+                    <div></div>
+                </div>
+                <p>HTML</p>
+            </div>
+            <div class="bar50">
+                <div>
+                    <div></div>
+                </div>
+                <p>SCSS</p>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <section class="author">
+            <h1>ANDRES MIRÁS SEOANE</h1>
+            <hr/>
+            <h3>FULL STACK WEB DEVELOPER</h3>
+            <h4>PERSONAL PROFILE</h4>
+            <p>
+                Hello! I am developing startups and new projects.<br/> 
+                Right now I am free to start working.
+            </p>
+        </section>
+        <section class="works">
+            <h4>WORK EXPERIENCE</h4>
+            <h5>INDUSTRIAL DESIGNER AND DEVELOPER</h5>
+            <h6>Cofrico || 11/2017 - 10/2019</h6>
+            <pre>🎈 Creation of VBA templates in Excel, project development, 
+      maintenance & drafting..
+            </pre>
+            <h5>INDUSTRIAL DESIGNER AND DEVELOPER</h5>
+            <h6>Tempus || 10/2019 - 01/2021</h6>
+            <pre>🎈 Development of program for the calculation of load loss
+      in ducts & projection of works.
+            </pre>
+            <h5>INDUSTRIAL COMERCIAL</h5>
+            <h6>Grupo Noria || 01/2021 - 05/2021</h6>
+            <pre>🎈 Preparation of plans & budgets.
+            </pre>
+            </pre>
+            <h5>INDUSTRIAL DESIGNER AND DEVELOPER</h5>
+            <h6>Nuriclima Galicia || 05/2021 - 06/2022</h6>
+            <pre>🎈 purchasing manager and developer.
+            </pre>
+        </section>
+
+        <script language="Javascript">
+            function imprSelec(nombre) {
+              var ficha = document.getElementById(nombre);
+              var ventimp = window.open(' ', 'popimpr');
+              ventimp.document.write( ficha.innerHTML );
+              ventimp.document.close();
+              ventimp.print( );
+              ventimp.close();
+            }
+        </script>
+
+    </main>
+</body>
+</html>
