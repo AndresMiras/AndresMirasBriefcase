@@ -31,7 +31,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 1.3vmax;
+  font-size: 1.4vmax;
   color: rgb(255, 255, 255);
   font-family: "roboto-regular";
   text-align: center;
@@ -96,6 +96,7 @@ pre {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  color: rgba(55, 52, 52, 0.9);
 }
 
 .print:hover {
@@ -545,6 +546,7 @@ main hr {
   margin: 1.5vh 0;
   border: 3px solid rgb(13, 112, 157);
   width: 20%;
+  background-color: rgb(13, 112, 157);
 }
 
 .author {
@@ -561,6 +563,7 @@ main hr {
   margin: 3% 0 0 0%;
   text-align: left;
   width: 90%;
+  color: rgba(55, 52, 52, 0.9);
 }
 
 .author::before {
@@ -782,7 +785,7 @@ main hr {
     border-radius: 50%;
   }
 }
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1520px) {
   * {
     font-size: 1.1vw;
   }
