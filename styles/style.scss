@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 1.4vmax;
+  font-size: 1.3vmax;
   color: $colorFont1;
   font-family: $fontGen2;
   text-align: center;
@@ -312,7 +312,7 @@ main {
   margin-left: 0.5%;
   @include flex(flex-start,flex-start, column);
   @include boxrec(55%,100%,$colorBackgrunds3);
-  padding: 0 1vmax 0 3vmax;
+  padding: 0 1vw 0 3vw;
 
   h1 {
     width: fit-content;
@@ -329,7 +329,7 @@ main {
 .author {
   position: relative;
   @include boxrec(100%,auto);
-  margin: 2.2vh 0 0 0;
+  margin: 1.2vmax 0 0 0;
   p {
     @include tittleh1(70%, $colorFont3, $fontGen2);
     margin: 3% 0 0 0%;
@@ -345,7 +345,7 @@ main {
 
 .works {
   position: relative;
-  margin-top: 2.2vmax;
+  margin-top: 1.5vmax;
   h4 {
     position: relative;
   }
@@ -368,7 +368,7 @@ main {
 
 .education {
   position: relative;
-  margin-top: 2.2vmax;
+  margin-top: 1.5vmax;
   h4 {
     position: relative;
   }
@@ -477,6 +477,13 @@ main {
   }
   .education::before {
     @include imgbefore(3vmax, "./img/home-work.svg", 50%);
+  }
+}
+
+
+@media only screen and (min-width: 1650px) {
+  * {
+    font-size: 1.1vw;
   }
 }
 
