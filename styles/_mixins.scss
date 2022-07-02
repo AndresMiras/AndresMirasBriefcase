@@ -6,9 +6,8 @@
 }
 
 @mixin border($rad:0, $wh:1.5px, $color:transparent, $sty: solid) {
-    border:$wh solid $color;
+    border:$wh $sty $color;
     border-radius: $rad;
-    border-style: $sty;
 }
 
 @mixin flex-center($justf:center, $direct:column, $wr:nowrap) {
@@ -46,5 +45,17 @@
 }
 
 @mixin marginbar($heig:2vh) {
-    margin: $heig 0 0 7%;
+    margin: $heig 0 0 0%;
+}
+
+@mixin imgbefore($siz:20px, $lnk:'none', $rad:0){
+  content: '';
+  position: absolute;
+  top: - calc($siz / 4);
+  left: - calc($siz * 1.4);
+  @include boxsq($siz);
+  background-image: url($lnk);
+  background-position: center;
+  background-size: cover;
+  border-radius: $rad;
 }

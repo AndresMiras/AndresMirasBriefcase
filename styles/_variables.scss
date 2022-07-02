@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "roboto-thin";
+    font-family: "roboto-light";
     /* Es el nombre de la nueva letra que tendremos para usar en nuestro css */
-    src: url("./fonts/Roboto-Thin.ttf");
+    src: url("./fonts/Roboto-Light.ttf");
 }
 
 @font-face {
@@ -16,7 +16,7 @@
     src: url("./fonts/Roboto-Bold.ttf");
 }
 
-$fontGen1: 'roboto-thin';
+$fontGen1: 'roboto-light';
 $fontGen2: 'roboto-regular';
 $fontGen3: 'roboto-bold';
 $colorFont1:rgba(255, 255, 255);
